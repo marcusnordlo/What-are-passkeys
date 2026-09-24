@@ -49,11 +49,6 @@
     />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="" />
-    <link rel="alternate" hreflang="de" href="de/" />
-    <link rel="alternate" hreflang="en" href="" />
-    <link rel="alternate" hreflang="es" href="es/" />
-    <link rel="alternate" hreflang="fr" href="fr/" />
-    <link rel="alternate" hreflang="ja" href="ja/" />
     <link rel="alternate" hreflang="x-default" href="" />
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
@@ -118,7 +113,7 @@
             "name": "Vad är en passkey, egentligen?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "En passkey är en unik digital nyckel som ersätter ditt lösenord. När du skapar en skapas två länkade digitala nycklar: en lagras säkert i din lösenordshanterare och en delas med webbplatsen eller appen. När du loggar in verifierar din enhet att det är du med hjälp av ansikte, fingeravtryck eller enhetens PIN-kod och använder sedan din del av passkeyn för att säkert bevisa att det är du. Din privata nyckel delas aldrig med webbplatsen."
+              "text": "En passkey är en unik digital nyckel som ersätter ditt lösenord. När du skapar en skapas två länkade digitala nycklar: en lagras säkert i din lösenordshanterare och en delas med webbplatsen eller appen. När du loggar in verifierar din enhet att det är du med hjälp av fingeravtryck eller enhetens PIN-kod och använder sedan din del av passkeyn för att säkert bevisa att det är du. Din privata nyckel delas aldrig med webbplatsen."
             }
           },
           {
@@ -134,7 +129,7 @@
             "name": "Hur skiljer sig en passkey från 2FA (t.ex. SMS-koder eller autentiserarappar)?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Traditionell tvåfaktorsautentisering, eller 2FA, lägger vanligtvis till ytterligare ett steg efter att du angett ditt lösenord, till exempel en kod som skickas via SMS eller genereras av en app. En passkey kan ersätta både lösenordet och dessa extra steg genom att säkert verifiera att du har din passkey och att det verkligen är du med hjälp av ansikte, fingeravtryck eller enhetens PIN-kod. Vissa webbplatser kan fortfarande kräva ytterligare verifiering beroende på hur de har implementerat passkeys."
+              "text": "Traditionell tvåfaktorsautentisering, eller 2FA, lägger vanligtvis till ytterligare ett steg efter att du angett ditt lösenord, till exempel en kod som skickas via SMS eller genereras av en app. En passkey kan ersätta både lösenordet och dessa extra steg genom att säkert verifiera att du har din passkey och att det verkligen är du med hjälp av fingeravtryck eller enhetens PIN-kod. Vissa webbplatser kan fortfarande kräva ytterligare verifiering beroende på hur de har implementerat passkeys."
             }
           },
           {
@@ -166,7 +161,7 @@
             "name": "Vad behöver jag egentligen för att logga in med en passkey?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Du behöver åtkomst till din passkey via lösenordshanteraren och ett sätt att verifiera att det är du, till exempel ansikte, fingeravtryck eller enhetens PIN-kod. I de flesta fall behöver du inte ladda ner något nytt eftersom din telefon eller dator redan har en inbyggd lösenordshanterare."
+              "text": "Du behöver åtkomst till din passkey via lösenordshanteraren och ett sätt att verifiera att det är du, till exempel fingeravtryck eller enhetens PIN-kod. I de flesta fall behöver du inte ladda ner något nytt eftersom din telefon eller dator redan har en inbyggd lösenordshanterare."
             }
           },
           {
@@ -198,7 +193,7 @@
             "name": "Hur konfigurerar jag en passkey?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "När en webbplats eller app erbjuder passkeys letar du efter ett alternativ som ”Skapa en passkey” eller ”Konfigurera en passkey” i konto- eller säkerhetsinställningarna. Din enhet ber dig sedan verifiera att det är du med hjälp av ansikte, fingeravtryck eller enhetens PIN-kod. Din passkey skapas och lagras därefter i lösenordshanteraren. Vissa webbplatser och appar ber dig att konfigurera en efter inloggning."
+              "text": "När en webbplats eller app erbjuder passkeys letar du efter ett alternativ som ”Skapa en passkey” eller ”Konfigurera en passkey” i konto- eller säkerhetsinställningarna. Din enhet ber dig sedan verifiera att det är du med hjälp av fingeravtryck eller enhetens PIN-kod. Din passkey skapas och lagras därefter i lösenordshanteraren. Vissa webbplatser och appar ber dig att konfigurera en efter inloggning."
             }
           },
           {
@@ -238,7 +233,7 @@
             "name": "Varför känns det som fler steg att använda en passkey än ett lösenord?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Just nu visar vissa webbplatser fortfarande extra frågor (som ”vill du använda en passkey?”) medan de vänjer människor vid det nya alternativet. När det blir standard går det blixtsnabbt: verifiera att det är du med ansikte, fingeravtryck eller enhetens PIN-kod så är du inne."
+              "text": "Just nu visar vissa webbplatser fortfarande extra frågor (som ”vill du använda en passkey?”) medan de vänjer människor vid det nya alternativet. När det blir standard går det blixtsnabbt: verifiera att det är du med fingeravtryck eller enhetens PIN-kod så är du inne."
             }
           },
           {
@@ -918,7 +913,7 @@
             </h2>
             <p class="text-xl text-gray-600 dark:text-gray-400 leading-relaxed mb-10">
               Med passkeys kan du logga in snabbt och säkert utan att skapa, komma ihåg eller skriva in ett lösenord.
-              När du loggar in med en passkey verifierar din enhet först att det är du med hjälp av ansikte,
+              När du loggar in med en passkey verifierar din enhet först att det är du med hjälp av 
               fingeravtryck eller enhetens PIN-kod.
             </p>
           </div>
@@ -1358,7 +1353,7 @@
                       Bekräfta att det är du
                     </h3>
                     <p class="text-gray-600 dark:text-gray-400">
-                      Nästa gång du loggar in ber din enhet dig att verifiera att det är du med hjälp av ansikte,
+                      Nästa gång du loggar in ber din enhet dig att verifiera att det är du med hjälp av 
                       fingeravtryck eller enhetens PIN-kod. Om biometrik används lämnar den aldrig din enhet och delas
                       aldrig.
                     </p>
@@ -3046,7 +3041,7 @@
                     Traditionell tvåfaktorsautentisering, eller 2FA, lägger vanligtvis till ytterligare ett steg efter
                     att du angett ditt lösenord, till exempel en kod som skickas via SMS eller genereras av en app. En
                     passkey kan ersätta både lösenordet och dessa extra steg genom att säkert verifiera att du har din
-                    passkey och att det verkligen är du med hjälp av ansikte, fingeravtryck eller enhetens PIN-kod.
+                    passkey och att det verkligen är du med hjälp av fingeravtryck eller enhetens PIN-kod.
                     Vissa webbplatser kan fortfarande kräva ytterligare verifiering beroende på hur de har implementerat
                     passkeys.
                   </p>
