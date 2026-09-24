@@ -1343,8 +1343,8 @@
                     </h3>
                     <p class="text-gray-600 dark:text-gray-400">
                       Din säkerhetsnyckel skapar ett unikt nyckelpar, din passkey, för webbplatsen eller appen. Ena
-                      delen av passkeyn delas med webbplatsen. Den andra delen lagras säkert i säkerhetsnyckeln på
-                      din enhet för att bevisa att det är du. Din del delas eller lagras aldrig av webbplatsen eller
+                      delen av passkeyn delas med webbplatsen. Den andra delen lagras säkert i säkerhetsnyckeln
+                      för att bevisa att det är du. Din del delas eller lagras aldrig av webbplatsen eller
                       appen.
                     </p>
                   </div>
@@ -1919,7 +1919,7 @@
                 </h3>
                 <p class="text-emerald-800 dark:text-emerald-300 leading-relaxed text-sm mb-4">
                   Din passkey är permanent bunden till exakt den webbplats där du skapade den, så den reagerar helt
-                  enkelt inte på en webbplats som försöker efterlikna den — varken på en typosquatting-sida eller en
+                  enkelt inte på en webbplats som försöker efterlikna den — varken på typosquatting (URL-kapning) eller en
                   omdirigering. Det finns inget att skriva in, så angriparen har inget att stjäla.
                 </p>
                 <div class="grid grid-cols-2 gap-3">
@@ -2041,7 +2041,7 @@
                   <p class="font-bold text-emerald-700 dark:text-emerald-300 text-center text-base">Riktig webbplats</p>
                   <p class="font-mono text-sm text-emerald-700 dark:text-emerald-300 text-center mt-1">bank.com</p>
                   <p class="text-sm font-semibold text-red-600 dark:text-red-400 text-center mt-2">
-                    Nu är du inloggad som du!
+                    Nu är du inloggad!
                   </p>
                 </div>
               </div>
@@ -2397,7 +2397,7 @@
                 class="flex justify-between items-center py-1.5 text-sm border-b border-gray-100 dark:border-gray-700 last:border-0"
               >
                 <span class="text-gray-500 dark:text-gray-400">Användarvänlighet</span>
-                <span class="flex items-center gap-1 text-gray-500 dark:text-gray-300">Kräver åtkomst till e-post</span>
+                <span class="flex items-center gap-1 text-gray-500 dark:text-gray-300">Kräver e-poståtkomst</span>
               </div>
             </div>
             <div
@@ -2998,8 +2998,8 @@
               class="faq-search-count"
               aria-live="polite"
               hidden=""
-              data-template-one="{count} question found"
-              data-template-other="{count} questions found"
+              data-template-one="{count} fråga hittades"
+              data-template-other="{count} frågor hittades"
             ></p>
             <p id="faq-no-results" class="faq-no-results" hidden="">
               Inga matchande frågor hittades. Försök med en annan sökterm.
