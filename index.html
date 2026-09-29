@@ -40,6 +40,7 @@
         document.documentElement.classList.add("jump-in-progress");
       }
     </script>
+    <link rel="stylesheet" href="./assets/where-stored.css" />
     <meta name="generator" content="Astro v7.3.2" />
     <title>Passkeys förklarat: Det enklare och säkrare sättet att logga in</title>
     <meta
@@ -805,6 +806,7 @@
       <a href="#hero" data-label="Passkeys" aria-label="Passkeys" class=""></a>
       <a href="#what-is" data-label="Vad är en passkey?" aria-label="Vad är en passkey?" class="active"></a>
       <a href="#how-it-works" data-label="Så fungerar det" aria-label="Så fungerar det" class=""></a>
+      <a href="#where-stored" data-label="Var sparas passkeys?" aria-label="Var sparas passkeys?" class=""></a>
       <a href="#why-passwords-fail" data-label="Varför är inte lösenord bra?" aria-label="Varför är inte lösenord bra?" class=""></a>
       <a href="#phishing" data-label="Nätfiske" aria-label="Nätfiske" class=""></a>
       <a href="#comparison" data-label="Jämförelse" aria-label="Jämförelse" class=""></a>
@@ -892,6 +894,12 @@
             class="text-xs font-medium text-gray-500 dark:text-gray-300 hover:text-indigo-700 dark:hover:text-indigo-300 bg-white/70 dark:bg-gray-800/70 hover:bg-indigo-50 dark:hover:bg-indigo-950 border border-gray-200 dark:border-gray-600 hover:border-indigo-200 dark:hover:border-indigo-800 rounded-full px-3 py-1 transition-colors duration-150"
           >
             Använda passkeys
+          </a>
+          <a
+            href="#where-stored"
+            class="text-xs font-medium text-gray-500 dark:text-gray-300 hover:text-indigo-700 dark:hover:text-indigo-300 bg-white/70 dark:bg-gray-800/70 hover:bg-indigo-50 dark:hover:bg-indigo-950 border border-gray-200 dark:border-gray-600 hover:border-indigo-200 dark:hover:border-indigo-800 rounded-full px-3 py-1 transition-colors duration-150"
+          >
+            Var passkeys sparas
           </a>
           <a
             href="#why-passwords-fail"
@@ -1593,6 +1601,46 @@
         }
         e();
       </script>
+      <section id="where-stored" class="min-h-screen flex flex-col justify-center py-24 px-6 bg-linear-to-br from-indigo-50 to-white dark:from-indigo-950 dark:to-gray-900">
+        <div class="max-w-5xl mx-auto w-full">
+          <div class="fade-in-section mb-12">
+            <p class="text-sm font-semibold uppercase tracking-widest text-indigo-600 dark:text-indigo-400 mb-4">
+              Lagring
+            </p>
+            <h2 class="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-gray-50 mb-4">
+              <button type="button" class="section-link-heading" aria-label='Copy link to "Var kan passkeys sparas?" section'>
+                Var kan passkeys sparas?
+              </button>
+            </h2>
+            <p class="text-xl text-gray-600 dark:text-gray-400 leading-relaxed">
+              En passkey kan antingen vara knuten till en enda enhet eller synkas mellan dina enheter. Valet avgör
+              hur den följer med dig – och vad som händer om du tappar en enhet.
+            </p>
+          </div>
+          <div class="ws-grid fade-in-section">
+            <div class="ws-panel">
+              <div class="ws-head"><span class="ws-head-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect><path d="M12 18h.01"></path></svg></span><h3 class="ws-title">Enhetsbundna</h3></div>
+              <p class="ws-desc">Knutna till en specifik enhet eller hårdvaruautentiserare.</p>
+              <div class="ws-chips"><span class="ws-chip">Stannar på enheten</span><span class="ws-chip">Synkas inte</span></div>
+              <p class="ws-group">Kärnalternativ</p><div class="ws-tiles"><div class="ws-tile"><span class="ws-ico "><img src="./assets/where-stored/microsoft-authenticator.png" alt="" width="32" height="32" loading="lazy" /></span><span class="ws-name">Microsoft Authenticator-appen</span></div><div class="ws-tile"><span class="ws-ico "><img src="./assets/where-stored/fido2-key.png" alt="" width="32" height="32" loading="lazy" /></span><span class="ws-name">FIDO2-säkerhetsnyckel</span><span class="ws-sub">Till exempel YubiKey</span></div><div class="ws-tile"><div class="ws-icons"><span class="ws-ico sm"><img src="./assets/where-stored/apple-logo.svg" alt="" width="32" height="32" loading="lazy" /></span><span class="ws-ico sm"><img src="./assets/where-stored/edge-on-mac.svg" alt="" width="32" height="32" loading="lazy" /></span><span class="ws-ico sm"><img src="./assets/where-stored/chrome-on-mac.svg" alt="" width="32" height="32" loading="lazy" /></span></div><span class="ws-name">Edge och Chrome på macOS</span></div><div class="ws-tile"><span class="ws-ico "><img src="./assets/where-stored/windows-hello.svg" alt="" width="32" height="32" loading="lazy" /></span><span class="ws-name">Windows Hello</span><span class="ws-sub">Entra-passkey i Windows</span></div></div><p class="ws-group">Automatiskt registrerade passkeys</p><div class="ws-tiles"><div class="ws-tile"><span class="ws-ico "><img src="./assets/where-stored/windows-hello-business.png" alt="" width="32" height="32" loading="lazy" /></span><span class="ws-name">Windows Hello for Business</span></div><div class="ws-tile"><span class="ws-ico "><img src="./assets/where-stored/apple-logo.svg" alt="" width="32" height="32" loading="lazy" /></span><span class="ws-name">Plattformsuppgift för macOS</span></div></div>
+            </div>
+            <div class="ws-panel synced">
+              <div class="ws-head"><span class="ws-head-icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path><path d="M8 16H3v5"></path></svg></span><h3 class="ws-title">Synkade</h3></div>
+              <p class="ws-desc">Hanteras och finns tillgängliga på flera enheter där du är inloggad.</p>
+              <div class="ws-chips"><span class="ws-chip">Följer med mellan enheter</span><span class="ws-chip">Återställs via ditt konto</span></div>
+              <p class="ws-group">Inbyggda i systemet (gratis)</p><div class="ws-tiles"><div class="ws-tile"><span class="ws-ico "><img src="./assets/where-stored/apple-passwords.svg" alt="" width="32" height="32" loading="lazy" /></span><span class="ws-name">Apple Lösenord</span></div><div class="ws-tile"><span class="ws-ico "><img src="./assets/where-stored/google-password-manager.svg" alt="" width="32" height="32" loading="lazy" /></span><span class="ws-name">Google Lösenordshanterare</span></div><div class="ws-tile"><span class="ws-ico "><img src="./assets/where-stored/microsoft-password-manager.svg" alt="" width="32" height="32" loading="lazy" /></span><span class="ws-name">Windows lösenordshanterare</span></div></div><p class="ws-group">Kommersiella alternativ</p><div class="ws-tiles"><div class="ws-tile wide"><div class="ws-icons"><span class="ws-ico sm"><img src="./assets/where-stored/dashlane.svg" alt="" width="32" height="32" loading="lazy" /></span><span class="ws-ico sm"><img src="./assets/where-stored/keeper.svg" alt="" width="32" height="32" loading="lazy" /></span><span class="ws-ico sm"><img src="./assets/where-stored/nordpass.svg" alt="" width="32" height="32" loading="lazy" /></span><span class="ws-ico sm"><img src="./assets/where-stored/1password.svg" alt="" width="32" height="32" loading="lazy" /></span><span class="ws-ico sm"><img src="./assets/where-stored/bitwarden.svg" alt="" width="32" height="32" loading="lazy" /></span></div><span class="ws-name">Kommersiella lösenordshanterare</span></div></div>
+            </div>
+          </div>
+          <div class="ws-note fade-in-section">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+            <p>
+              <strong>Tumregel:</strong> synkade passkeys är enklast i vardagen eftersom de finns kvar när du byter
+              enhet. Enhetsbundna passkeys ger mer kontroll, men förlorar du enheten behöver du en annan
+              inloggnings- eller återställningsmetod – därför är det bra att ha mer än en passkey per konto.
+            </p>
+          </div>
+        </div>
+      </section>
       <section
         id="why-passwords-fail"
         class="min-h-screen flex flex-col justify-center py-24 px-6 bg-white dark:bg-gray-900"
