@@ -1,11 +1,11 @@
 /* Avsnitt: Var sparas passkeys? */
 #where-stored .ws-grid{display:grid;grid-template-columns:1fr;gap:1.5rem}
 @media (min-width:900px){#where-stored .ws-grid{grid-template-columns:1fr 1fr;gap:2rem}}
-#where-stored .ws-panel{--accent:#4f46e5;--accent-soft:#eef2ff;--accent-ink:#312e81;
-  background:#fff;border:1px solid #e5e7eb;border-radius:1.25rem;padding:1.5rem;
+#where-stored .ws-panel{--accent:#1d3c34;--accent-soft:#f2e8db;--accent-ink:#1d3c34;--bar:#1d3c34;
+  background:#fff;border:1px solid #e6d6c4;border-radius:1.25rem;padding:1.5rem;
   box-shadow:0 1px 2px rgba(17,24,39,.05);position:relative;overflow:hidden}
-#where-stored .ws-panel::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:var(--accent)}
-#where-stored .ws-panel.synced{--accent:#059669;--accent-soft:#ecfdf5;--accent-ink:#064e3b}
+#where-stored .ws-panel::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:var(--bar,var(--accent))}
+#where-stored .ws-panel.synced{--accent:#6b6638;--accent-soft:#eeeadb;--accent-ink:#4a4626;--bar:#afa97e}
 #where-stored .ws-head{display:flex;align-items:center;gap:.75rem;margin-bottom:.5rem}
 #where-stored .ws-head-icon{width:2.5rem;height:2.5rem;border-radius:.75rem;background:var(--accent-soft);
   color:var(--accent);display:flex;align-items:center;justify-content:center;flex-shrink:0}
@@ -19,27 +19,27 @@
 #where-stored .ws-group:first-of-type{margin-top:0}
 #where-stored .ws-tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem}
 #where-stored .ws-tile{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
-  gap:.65rem;padding:1rem .75rem;border:1px solid #e5e7eb;border-radius:1rem;background:#f9fafb;
+  gap:.65rem;padding:1rem .75rem;border:1px solid #e6d6c4;border-radius:1rem;background:#faf7f2;
   transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease;min-height:8.5rem}
 #where-stored .ws-tile:hover{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 6px 16px rgba(17,24,39,.08)}
 #where-stored .ws-tile.wide{grid-column:1 / -1}
 #where-stored .ws-icons{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem}
-#where-stored .ws-ico{width:3.5rem;height:3.5rem;border-radius:.9rem;background:#fff;border:1px solid #e5e7eb;
+#where-stored .ws-ico{width:3.5rem;height:3.5rem;border-radius:.9rem;background:#fff;border:1px solid #e6d6c4;
   display:flex;align-items:center;justify-content:center;box-shadow:0 1px 2px rgba(17,24,39,.05)}
 #where-stored .ws-ico img{width:2rem;height:2rem;object-fit:contain;display:block}
 #where-stored .ws-ico.sm{width:2.75rem;height:2.75rem;border-radius:.75rem}
 #where-stored .ws-ico.sm img{width:1.6rem;height:1.6rem}
 #where-stored .ws-name{font-size:.9rem;font-weight:700;color:#111827;line-height:1.25}
 #where-stored .ws-sub{font-size:.75rem;color:#6b7280;margin-top:-.4rem}
-#where-stored .ws-note{margin-top:2rem;display:flex;gap:.9rem;align-items:flex-start;background:#eef2ff;
-  border:1px solid #c7d2fe;border-radius:1rem;padding:1.1rem 1.25rem;color:#312e81;line-height:1.55}
+#where-stored .ws-note{margin-top:2rem;display:flex;gap:.9rem;align-items:flex-start;background:#f7efe4;
+  border:1px solid #e6d6c4;border-radius:1rem;padding:1.1rem 1.25rem;color:#1d3c34;line-height:1.55}
 #where-stored .ws-note svg{flex-shrink:0;margin-top:.15rem}
 @media (max-width:340px){#where-stored .ws-tiles{grid-template-columns:1fr}}
 
 /* Mörkt läge */
 [data-theme="dark"] #where-stored .ws-panel{background:#1f2937;border-color:#374151;box-shadow:none}
-[data-theme="dark"] #where-stored .ws-panel{--accent:#818cf8;--accent-soft:rgba(99,102,241,.18);--accent-ink:#c7d2fe}
-[data-theme="dark"] #where-stored .ws-panel.synced{--accent:#34d399;--accent-soft:rgba(16,185,129,.16);--accent-ink:#a7f3d0}
+[data-theme="dark"] #where-stored .ws-panel{--accent:#818cf8;--bar:#818cf8;--accent-soft:rgba(99,102,241,.18);--accent-ink:#c7d2fe}
+[data-theme="dark"] #where-stored .ws-panel.synced{--accent:#34d399;--bar:#34d399;--accent-soft:rgba(16,185,129,.16);--accent-ink:#a7f3d0}
 [data-theme="dark"] #where-stored .ws-title,[data-theme="dark"] #where-stored .ws-name{color:#f9fafb}
 [data-theme="dark"] #where-stored .ws-desc{color:#d1d5db}
 [data-theme="dark"] #where-stored .ws-sub{color:#9ca3af}

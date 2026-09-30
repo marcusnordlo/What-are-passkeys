@@ -1,0 +1,125 @@
+/* ==========================================================================
+   Nordlo-tema (endast ljust läge)
+   Primärfärg: #1d3c34 (Te Papa Green). Stödfärger ur Nordlos profil:
+   #f2d9c4 (Albescent White / kräm) och #afa97e (Hillary / olivton).
+   Mörkt läge berörs inte – alla regler är begränsade till
+   html:not([data-theme="dark"]).
+   Laddas efter global.css så att reglerna vinner över Tailwinds @layer.
+   ========================================================================== */
+
+html:not([data-theme="dark"]) {
+  --nl-primary: #1d3c34;
+  --nl-primary-hover: #142a24;
+  --nl-primary-mid: #3f6357;
+  --nl-cream: #f2d9c4;
+  --nl-cream-soft: #f7f3ec;
+  --nl-cream-tint: #f2e8db;
+  --nl-border: #e6d6c4;
+  --nl-border-strong: #c9bfa0;
+  --nl-olive: #afa97e;
+  --nl-ink: #14211c;
+
+  /* "Indigo" är sajtens primärskala → skog­sgrön + kräm */
+  --color-indigo-50: #f7f3ec;
+  --color-indigo-100: #f2e8db;
+  --color-indigo-200: #e6d6c4;
+  --color-indigo-300: #c9bfa0;
+  --color-indigo-400: #8f9a83;
+  --color-indigo-500: #3f6357;
+  --color-indigo-600: #1d3c34;
+  --color-indigo-700: #16302a;
+  --color-indigo-800: #0f241f;
+  --color-indigo-900: #0a1a16;
+
+  /* Grått med svag grön ton i stället för blågrått */
+  --color-gray-50: #f7f8f6;
+  --color-gray-100: #eef0ec;
+  --color-gray-200: #dfe3dd;
+  --color-gray-300: #c6ccc4;
+  --color-gray-400: #98a39b;
+  --color-gray-500: #6b7871;
+  --color-gray-600: #4d5a54;
+  --color-gray-700: #37443e;
+  --color-gray-800: #23302a;
+  --color-gray-900: #14211c;
+}
+
+html:not([data-theme="dark"]) body {
+  color: var(--nl-ink);
+}
+
+/* ---------- Sajtens egna komponenter (hårdkodade färger) ---------- */
+html:not([data-theme="dark"]) #section-dots a.active {
+  background: var(--nl-primary);
+}
+html:not([data-theme="dark"]) .mode-toggle,
+html:not([data-theme="dark"]) .theme-toggle,
+html:not([data-theme="dark"]) .header-menu-toggle,
+html:not([data-theme="dark"]) .lang-menu-button,
+html:not([data-theme="dark"]) .faq-search-input {
+  border-color: var(--nl-border);
+}
+html:not([data-theme="dark"]) .theme-toggle,
+html:not([data-theme="dark"]) .header-menu-toggle,
+html:not([data-theme="dark"]) .lang-menu-button {
+  color: var(--color-gray-700);
+}
+html:not([data-theme="dark"]) .theme-toggle:hover,
+html:not([data-theme="dark"]) .header-menu-toggle:hover,
+html:not([data-theme="dark"]) .lang-menu-button:hover {
+  border-color: var(--nl-border-strong);
+}
+html:not([data-theme="dark"]) .mode-toggle-option.selected {
+  background: var(--nl-primary);
+  color: #fff;
+}
+html:not([data-theme="dark"]) .header-controls.open {
+  border-bottom-color: var(--nl-border);
+}
+html:not([data-theme="dark"]) .lang-menu-list {
+  border-color: var(--nl-border);
+}
+html:not([data-theme="dark"]) .lang-menu-item:hover {
+  background: var(--nl-cream-soft);
+}
+html:not([data-theme="dark"]) .lang-menu-item.selected,
+html:not([data-theme="dark"]) .faq-item[open] summary {
+  color: var(--nl-primary);
+}
+html:not([data-theme="dark"]) .faq-chevron,
+html:not([data-theme="dark"]) .faq-search-icon {
+  color: var(--nl-olive);
+}
+html:not([data-theme="dark"]) .faq-advanced-tag {
+  color: var(--nl-primary);
+  background: var(--nl-cream-tint);
+}
+html:not([data-theme="dark"]) .faq-search-input {
+  color: var(--nl-ink);
+}
+html:not([data-theme="dark"]) .faq-search-input:focus-visible {
+  border-color: var(--nl-primary);
+  outline-color: var(--nl-primary);
+}
+html:not([data-theme="dark"]) .section-link-heading:focus-visible {
+  outline-color: var(--nl-primary);
+}
+html:not([data-theme="dark"]) .comparison-passkey-col {
+  background: linear-gradient(135deg, var(--nl-cream-tint) 0%, #eaf3ee 100%);
+}
+
+/* ---------- Inbyggda SVG-diagram (färger som presentationsattribut) ---------- */
+html:not([data-theme="dark"]) svg [fill="#4f46e5"] { fill: var(--nl-primary); }
+html:not([data-theme="dark"]) svg [stroke="#4f46e5"] { stroke: var(--nl-primary); }
+html:not([data-theme="dark"]) svg [fill="#6366f1"] { fill: var(--nl-primary-mid); }
+html:not([data-theme="dark"]) svg [stroke="#6366f1"] { stroke: var(--nl-primary-mid); }
+html:not([data-theme="dark"]) svg [fill="#f8f7ff"] { fill: var(--nl-cream-soft); }
+html:not([data-theme="dark"]) svg [fill="#e0e7ff"] { fill: var(--nl-cream-tint); }
+html:not([data-theme="dark"]) svg [stroke="#e0e7ff"] { stroke: var(--nl-border); }
+html:not([data-theme="dark"]) svg [fill="#c7d2fe"] { fill: var(--nl-border-strong); }
+html:not([data-theme="dark"]) svg [stroke="#c7d2fe"] { stroke: var(--nl-border-strong); }
+
+/* ---------- Hjältebild: YubiKey i Nordlos gröna ton ---------- */
+html:not([data-theme="dark"]) #hero img[alt*="YubiKey"] {
+  content: url("./hero-key-nordlo.png");
+}
